@@ -10,6 +10,19 @@
   --dark-color: #000;
 }
 
+/* Reset de estilos básicos */
+body, h1, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos generales */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
 body {
   display: flex;
   align-items: flex-end;
@@ -1614,20 +1627,6 @@ body {
   -webkit-animation-play-state: paused !important;
   animation-play-state: paused !important;
 } /*# sourceMappingURL=main.css.map */
-
-
-/* Reset de estilos básicos */
-body, h1, p {
-  margin: 0;
-  padding: 0;
-}
-
-/* Estilos generales */
-body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f7f7f7;
-  color: #333;
-}
 
 .container {
   max-width: 1200px;
