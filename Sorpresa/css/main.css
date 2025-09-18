@@ -30,18 +30,12 @@ body {
   font-weight: bold;
   letter-spacing: 4px;
 }
-@media only screen and (max-width: 600px) {
-  /* Estilos específicos para dispositivos con un ancho máximo de 600px */
-  #lyrics {
-      font-size: 14px; /* Reduce el tamaño del texto para dispositivos más pequeños */
-      margin-bottom: 530px;
-      letter-spacing: 3px;
-  }
 
-  @media only screen and (max-width: 600px) {
+/* 📱 Ajustes para móviles */
+@media only screen and (max-width: 600px) {
   #lyrics {
       font-size: 14px;
-      margin-bottom: 25%; /* en lugar de 530px */
+      margin-bottom: 25%; /* mantenemos este valor más flexible */
       letter-spacing: 2px;
       text-align: center;
   }
@@ -58,11 +52,10 @@ body {
   }
 }
 
-}
 .titulo {
   margin-bottom: 180px;
   font-family: "Arial Narrow", Arial, sans-serif;
-  color:  #808000; /* Vino */
+  color:  #808000; 
   position: absolute;
   font-weight: bold;
   letter-spacing: 10px;
@@ -70,13 +63,10 @@ body {
   animation: fadeIn 3s ease-in-out forwards;
   text-align: center;
 }
+
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 .night {
@@ -125,19 +115,16 @@ body {
 .flowers {
   position: relative;
   transform: scale(0.9);
-  /*margin-bottom: 100px;
-  */
 }
 
+/* 📱 Ajuste en móviles */
 @media only screen and (max-width: 600px) {
-  /* Estilos específicos para dispositivos con un ancho máximo de 600px */
-.flowers {
+  .flowers {
       font-size: 14px;
       margin-bottom: 35%;
       letter-spacing: 3px;
       transform: scale(1.0);
-}
-
+  }
 }
 
 .flower {
@@ -1646,6 +1633,8 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
 }
 
 h1 {
@@ -1656,24 +1645,16 @@ h1 {
 
 /* Media Queries para tamaños de pantalla diferentes */
 @media screen and (max-width: 600px) {
-  /* Estilos para pantallas pequeñas */
-  h1 {
-      font-size: 1.5em;
-  }
+  h1 { font-size: 1.5em; }
 }
 
 @media screen and (min-width: 601px) and (max-width: 1024px) {
-  /* Estilos para pantallas medianas */
-  h1 {
-      font-size: 1.8em;
-  }
+  h1 { font-size: 1.8em; }
 }
 
 @media screen and (min-width: 1025px) {
-  /* Estilos para pantallas grandes */
-  h1 {
-      font-size: 2em;
-  }
+  h1 { font-size: 2em; }
 }
+
 
 /* Agregar más estilos según sea necesario */
